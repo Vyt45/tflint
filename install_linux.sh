@@ -54,7 +54,7 @@ fi
 
 echo -e "\n\n===================================================="
 echo "Unpacking /tmp/tflint.zip ..."
-unzip -u /tmp/tflint.zip -d /tmp/
+unzip /tmp/tflint.zip -d /tmp/
 if [[ $os == "windows"* ]]; then
   dest="${TFLINT_INSTALL_PATH:-/bin}/"
   echo "Installing /tmp/tflint to ${dest}..."
